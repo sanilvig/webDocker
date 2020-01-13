@@ -37,7 +37,7 @@ steps:
   inputs:
     SourceFolder: '$(agent.builddirectory)'
     Contents: '*.yaml'
-    TargetFolder: '$(build.artifactstagingdirectory)/appdir'
+    TargetFolder: '$(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
